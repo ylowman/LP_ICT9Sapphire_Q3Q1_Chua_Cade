@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACL</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"; rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>;
+    
+    <style>
+
+        div{
+            background-color:rgba(236, 236, 125, 0.418);
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+         text-align: center;
+         padding: 15px;
+         border:4px solid;
+         border-radius: 100px;
+         border-width: thin ;
+         width: 100%;
+        }
+         
+    
+    
+    
+        body{
+            background-color:beige;
+            text-align: center;
+            
+        }
+  
+    
+      
+    </style>
+
+</head>
+<body>
+
+    <h1><u><b>If a=20 and b=5, compute for the following questions.</b></u></h1>
+
+    <br>
+    <br>
+
+    
+    <div class="container">
+        <h1>Arithmetic Operator </h1>
+        <h3>Questions: a. exponent of a**b |  b. a%b</h3>
+        <script>
+        var a, b, ExpResult,
+        a=20;
+        b=5;
+        ExpResult=a**b
+ </script>
+    
+        <h1></h1>
+        <p id="answer1"> </p>
+        <button type="button" class="btn btn-primary"  onclick="document.getElementById('answer1').innerHTML= 'a. Exponent is: ' + ExpResult;"> Show answer to A </button>
+
+         
+        <script>
+            var a, b, answer11,
+           
+let a = 20;
+let b = 5;
+let z = a % b;
+
+     </script>
+        
+           
+            <p id="answer1"> </p>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById('answer1').innerHTML= 'b. Mod: ' + a % b;"> Show answer to B </button>
+    </div>
+    <br><br>
+
+
+    <div class="container">
+    
+        <h1>Comparison Operator</h1>
+        <h3> Questions: A. a>b |  B. a=b </h3>
+    
+        <script> 
+        var a, b, ExpResult1,
+        a=20;
+        b=5;
+        ExpResult1=a>b;
+
+
+</script>
+
+<p id="answer2"> </p>
+        <button type="button" class="btn btn-primary" onclick="document.getElementById('answer2').innerHTML ='a. is a greater than b: '+  ExpResult1;"> Show answer to A</button>
+
+<br>
+
+<script> 
+    var a, b, ExpResult12,
+    a=20;
+    b=5;
+    ExpResult12=a==b;
+
+
+</script>
+
+<p id="answer2"> </p>
+    <button type="button"  class="btn btn-primary" onclick="document.getElementById('answer2').innerHTML ='b. is a equal to b: '+  ExpResult12;"> Show answer to B</button>
+
+
+    </div>
+    <br><br>
+    <div class="container">
+
+
+    
+    <h1>Logical Operator</h1>
+    <h3>Questions : A. (a <= b) && (a >= b) | B. (a != b) || (a == b) </h3>
+    
+    <script>
+        var a, b, ExpResult3,
+        a=20;
+        b=5;
+        ExpResult3=(a <= b) && (a >= b);
+        </script>
+        
+        
+        <p id="answer3"> </p>
+        <button type="button"  class="btn btn-primary" onclick="document.getElementById('answer3').innerHTML='a. (a <= b) && (a >= b) : ' + ExpResult3"> Show answer to A</button>
+
+        
+      <script>
+        var a, b, ExpResult31,
+        a=20;
+        b=5;
+        ExpResult31=(a != b) || (a == b);
+        </script>
+        
+        
+        <p id="answer3"> </p>
+        <button type="button" class="btn btn-primary"  onclick="document.getElementById('answer3').innerHTML='B. (a != b) && (a == b) : ' + ExpResult31"> Show answer to B</button>
+
+</body>
+</html>
